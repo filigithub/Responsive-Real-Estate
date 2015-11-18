@@ -1,14 +1,14 @@
 
 * {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-  text-decoration: none; /*border: 1px solid blue;*/
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none; 
 }
 
   body {
-    background-color: #fff;
-		font: 1em/1.3 sans-serif;
-	}
+  background-color: #fff;
+  font: 1em/1.3 sans-serif;
+  }
 /* Header and nav layout
 ================================ */
   
@@ -22,7 +22,6 @@
     display: -webkit-flex; display: flex;
     width:100%;
     height:60px;
-    border-bottom: 1px solid #1ABC9C;
   }
   .main-nav li {
     -webkit-align-self: center; align-self: center; 
@@ -36,7 +35,6 @@
     padding:0px;
     margin: 25px;
   }
-  
   li.main-menu a {
     margin: 15px;
     left:90px;
@@ -53,7 +51,6 @@
   }
 
 /*Imagery*/
-  
   img {
     max-width: 100%; max-height: 100%;
   }
@@ -61,17 +58,16 @@
     max-width:100%; height:100%; 
   }
   
-/*Slides*/
+ /*Slides*/
   .slides {
-    width: 100%; /*margin: 0px 120px 40px;*/
+    width: 100%; 
   }
   
 /*Column layout*/
-  .col{
+ .col{
     margin-right: -5px;
     padding: 20px;
-    /*vertical-align: top;*/
- }
+  }
  .primary-content {
     width: 100%;
     font-size: 1em;
@@ -83,11 +79,10 @@
     max-width: 940px;
     margin: 0 auto;
     padding: 0 2%;
-    font: 0.9em 'Roboto', sans-serif /*italic*/;
- /* overflow:auto;  I could use it instead of clearfix, but it's less trustworthy as it could cause scrolling*/
+    font: 0.9em 'Roboto', sans-serif;
   }
   .secondary-wrapper img{
-     border-bottom: 5px solid #3333ff;
+     border-bottom: 3px solid #3333ff;
   }
   .sec-title {
     border-bottom: 1px solid #d2d2d2;
@@ -102,18 +97,17 @@
     padding: 0;
     list-style: none;
   }
+  
   .gallery li {
     float: left;
     width: 28.3333%;
     margin: 2.5%;
   }
   .gallery li img {
-  max-width:100%;
-  max-height:100%;
-  padding:0%;
-  border-radius:0px;
-  box-shadow: none;
-}
+    max-width:100%;
+    max-height:100%;
+    box-shadow: none;
+  }
 
   .gallery ul a  {
     color: #0000b9;
@@ -135,14 +129,12 @@
   }
   .main-footer p,
   .main-footer a{
-    margin-top: 10px; /*give some margin otherwise p and a are overlapped and unreadable*/
+    margin-top: 10px; 
     font-size:0.9em;
     color:#eee;
   }
-
 /*Float clearfix*/
-
- .group:after{
+  .group:after{
     content:"";
     display: table;
     clear:both;
@@ -159,41 +151,40 @@
   li.main-menu :focus
   {
     background-color: #373737;
-    opacity: 2; /*    creates transparency*/
+    opacity: 2;
   }
   
-
 /*Media Queries
 ============================= */
 
 @media (min-width: 1px) and (max-width:649px) {
   #top{none;}
   
-  .main-header {
+  .main-header,
+  li.social-icons a {
     display:none;
   }
-  
   #navigation {
-		padding: 10px;
-		background-color:#000;           /*text-align: left;*/
-	}
+    padding: 10px;
+    background-color:#000; 
+  }
   nav ul {
-  	list-style: none;
-  	margin-left: 0;
-  	margin-bottom: 0;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
     padding-left: 0;
   }
   #navigation ul {
-		display: none;
+    display: none;
   }
   #navigation ul.expanded {
-		display: block;
-	}
+    display: block;
+  }
   #navigation li a {
-		display: block;
-		padding: 10px 0px; /*	font-size: 1.2em;*/
+    display: block;
+    padding: 10px 0px;
     color: #fff;
-	}
+  }
   .menu_button {
     display: inline-block;
     position:relative;
@@ -203,9 +194,9 @@
   }
   .menu_button:hover {
     color: #58cbdb;
-	}
+  }
   
-/*Soial Icons*/
+/*Social Icons*/
   .facebook-logo{
     position:absolute; top:19px; right:100px; border-radius:10px;
   }
@@ -214,10 +205,6 @@
   }
   .rss-logo{
     position:absolute; top:19px; right: 20px; border-radius:10px;
-  }
-  .slides {
-   /*width: 100%;*/
-  /*margin-bottom:70px;*/
   }
   .primary-content{
     font-size:0.9em;
@@ -240,8 +227,6 @@ TWO COLUMN LAYOUT
   }
 }
 
-		
-
 /*Media Queries
 ============================= */
   @media (min-width: 650px) {
@@ -255,15 +240,5 @@ TWO COLUMN LAYOUT
     display: flex;
     padding: 0 10px 0 0;
   }
-
 }
-/*Sticky*/
-
-./*main-header*/ 
-/*  background-color: white;
-  transition: 1s;*/
-
-.is-sticky ./*main-header*/{
- /* background-color: black;
-  z-index: 1000;*/
 
