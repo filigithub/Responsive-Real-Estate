@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Flexbox-Prova</title>
+ <meta name="description" content="">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+ <!--CSS-->
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="js/slick/slick.css">
+ <link rel="stylesheet" href="js/slick/slick-theme.css">
+ <link rel="stylesheet" href="css/style.flexbox.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <header class="main-header top">
+      <ul class="main-nav">
+        <li class="main-logo"><a href="#">Logo</a></li>
+        <li class="main-menu">
+          <a href="#">HOME</a>
+          <a href="#">FOR SALE</a>
+          <a href="#">RENTALS </a>
+          <a href="#">CONTACTS</a>
+        </li>
+        <li class="social-icons">
+          <a href="http://facebook.com"><img src="webicons/facebook.png" alt="Facebook Logo"></a>
+          <a href="http://twitter.com"><img src="webicons/twitter1.png" alt="Twitter Logo"></a>
+          <a href="http://rss.org"><img class="rss-logo" src="webicons/rss.png" alt="Rss Logo"></a>
+        </li>
+      </ul>
+    </header>
+  </div>
+    
+    <div class="mobile-menu top"> <!--wrapper-->
+    	<nav id="navigation">
+    		<a href="http://facebook.com"><img class="facebook-logo" src="webicons/facebook.png" alt="Facebook Logo"></a>
+        <a href="http://twitter.com"><img class="twitter-logo" src="webicons/twitter1.png" alt="Twitter Logo"></a>
+        <a href="http://rss.org"><img class="rss-logo" src="webicons/rss.png" alt="Rss Logo"></a>
+        <a class="menu_button" href="#footer_nav" onclick="toggleNav(); return false;">&#9776;  MENU</a> 
+        <ul id="navigation_list" role="navigation">
+    			<li><a href="#">HOME</a></li>
+    			<li><a href="work.html">FOR SALE</a></li>
+    			<li><a href="#">RENTALS </a></li>
+    			<li><a href="#">CONTACTS</a></li>
+        </ul>
+    	</nav>
+    </div>
+  
+  
+    <div class="slides">
+      <div class="style-img">
+        <img src="img/roman.jpg" alt="" />
+      </div>
+      <div class="style-img">
+        <img src="img/barcelona.jpg" alt="" />
+      </div>
+      <div class="style-img">
+        <img src="img/living-room.jpg" alt="" />
+      </div>
+    </div>
+  
+  
+    <div class="primary-content col"><!--main content-->
+    	<h2>Primary Content</h2>
+    	<p>Bacon ipsum dolor sit amet chicken pork ground round brisket corned beef ball tip shank tail salami filet mignon ham hock pork belly venison shankle. Pig kielbasa drumstick sausage pork chop boudin. Chicken t-bone salami pork chop, beef ribs kevin ham tri-tip beef venison biltong brisket.</p>
+    	<p>Venison strip steak meatball chicken, brisket prosciutto sirloin. Capicola drumstick brisket tri-tip salami. Chicken beef jerky, tail turkey prosciutto cow ham sirloin boudin tenderloin. Meatloaf tri-tip turducken brisket andouille, pork belly corned beef fatback hamburger.</p>
+    </div>
+  
+    <div class="secondary-wrapper group">
+      <h2 class="sec-title">Our Properties</h2>
+      <div class="gallery primary">
+        <ul>
+          <li>
+            <a href="http://facebook.com"><img src="img/villa.jpg" alt=""/></a>
+            <a href="https://www.facebook.com">Lorem</a>
+            <p>Lorem ipsum</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="http://facebook.com"><img src="img/pakistan.jpg" alt=""/></a>
+            <a href="https://www.facebook.com">Lorem</a>
+            <p> Lorem ipsum</p>
+          </li>
+        </ul> 
+      </div>
+      
+      <div class="gallery secondary">
+        <ul>
+          <li>
+            <a href="http://facebook.com"><img src="img/victorian.jpg" alt=""/></a>
+            <a href="https://www.facebook.com"> Lorem</a>
+            <p> Lorem ipsum </p>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="http://facebook.com"><img src="img/blue-house.jpg" alt=""/></a>
+          <a href="https://www.facebook.com"> Lorem</a>
+          <p> Lorem ipsuml</p></li>
+        </ul>
+      </div>
+      
+      <div class="gallery third">
+        <ul>
+          <li>
+            <a href="http://facebook.com"><img src="img/luxury-house.jpg" alt=""/></a>
+            <a href="https://www.facebook.com"> Lorem</a>
+            <p> Lorem ipsum</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+          <a href="http://facebook.com"><img src="img/flash-house.jpg" alt=""/></a>
+          <a href="https://www.facebook.com"> Lorem</a>
+          <p> Lorem ipsum</p></li> 
+        </ul>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <p>&copy;2014 Example Layout - Filippo D'Arrigo</p>
+      <p><a title="Privacy" href="/informativa-privacy.html"> Privacy</a> | <a title="Cookies" href="/cookies.html">Cookies</a> | <a title="Sitemap" href="/sitemap.xml">Sitemap</a> | <a title="Rss Feed" href="/rss.xml">Rss Feed</a> | <a href="/admin/" target="_blank">Admin</a></p>
+      <a href="#top">Back to top &raquo;</a>
+    </footer>
+   
+  
+    
+  
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/animsition/jquery.animsition.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    var originalNavClasses;
+    function toggleNav() {
+    var elem = document.getElementById('navigation_list');
+    var classes = elem.className;
+    if (originalNavClasses === undefined) {
+      originalNavClasses = classes;
+  		}
+  	elem.className = /expanded/.test(classes) ? originalNavClasses : originalNavClasses + ' expanded';
+  	}
+  </script> <!--the best practice is to add the script tag just before the closing body tag, so that won't block rendering the page-->
+  </body>
+</html>
+
+
